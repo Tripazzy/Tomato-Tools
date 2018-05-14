@@ -3,6 +3,9 @@ package salsaboy.tomatotool.graphics;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * A class which creates a JFrame while automating some things like making the frame visible.
+ */
 public class Window extends JFrame {
     @Override
     public void paint(Graphics g) {
