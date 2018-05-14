@@ -3,7 +3,8 @@ package salsaboy.tomatotool.control;
 import javax.swing.*;
 
 /**
- * A class used to pause for a certain amount of time
+ * A class used to pause for a certain amount of time. It will stop then continue, running onEnd() when it
+ * finishes.
  */
 public class Pause {
     /**
