@@ -6,4 +6,4 @@ just something people can use to their advantage in whatever they're trying to m
 # What's in it?
 ## Graphics
 Tomato Tools comes with several Graphics tools including:
-- An Image class for drawing images from pngs and other related methods
+- An Image class for drawing images from pngs and other some related methods
