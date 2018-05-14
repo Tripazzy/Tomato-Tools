@@ -11,7 +11,7 @@ public class Pause {
      * This is intended to be overridden.
      * It runs when the timer is over.
      */
-    private void onEnd() {}
+    protected void onEnd() {}
     private Timer timer;
     
     public Pause(int seconds) {
