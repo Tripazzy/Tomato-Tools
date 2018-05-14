@@ -7,13 +7,6 @@ import java.awt.*;
  * A class which creates a JFrame while automating some things like making the frame visible.
  */
 public class Window extends JFrame {
-    @Override
-    public void paint(Graphics g) {
-        for (int i = 0; i < getComponentCount(); i++) {
-            getComponent(i).paint(g);
-        }
-    }
-    
     public Window(int width, int height) {
         this(width, height, null);
     }
@@ -25,5 +18,10 @@ public class Window extends JFrame {
         setSize(width, height);
         setResizable(false);
         setVisible(true);
+    }
+    @Override
+    public Component add(Component component) {
+        component.setBounds(new Rectangle(new Point(0, 0), new Dimension(getWidth(), getHeight())));
+        return super.add(component);
     }
 }
