@@ -21,7 +21,7 @@ public class Window extends JFrame {
     }
     @Override
     public Component add(Component component) {
-        component.setBounds(new Rectangle(new Point(0, 0), new Dimension(getWidth(), getHeight())));
+        component.setBounds(new java.awt.Rectangle(new Point(0, 0), new Dimension(getWidth(), getHeight())));
         return super.add(component);
     }
 }
